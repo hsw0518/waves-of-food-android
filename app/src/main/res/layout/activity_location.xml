@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".LocationActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="28dp"
+        android:paddingTop="48dp"
+        android:paddingBottom="24dp">
+
+        <LinearLayout
+            android:id="@+id/locationContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_max="400dp">
+
+            <TextView
+                android:id="@+id/locationHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/location_heading"
+                android:textColor="@color/brand_red"
+                android:textSize="27sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/citySelector"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="start|center_vertical"
+                android:minHeight="60dp"
+                android:textAllCaps="false"
+                android:textColor="@color/ink"
+                android:textSize="16sp"
+                app:backgroundTint="@color/field_background"
+                app:cornerRadius="12dp"
+                app:icon="@drawable/ic_chevron_down"
+                app:iconGravity="end"
+                app:iconTint="@color/muted_ink"
+                app:strokeColor="@color/field_outline"
+                tools:text="Jaipur" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/locationDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:layout_marginBottom="48dp"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/location_description"
+            android:textColor="@color/ink"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/locationCredit"
+            app:layout_constraintEnd_toEndOf="@id/locationContent"
+            app:layout_constraintStart_toStartOf="@id/locationContent"
+            app:layout_constraintTop_toBottomOf="@id/locationContent"
+            app:layout_constraintVertical_bias="0.45" />
+
+        <TextView
+            android:id="@+id/locationCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="@string/design_credit"
+            android:textColor="@color/brand_red"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,2 @@
+d4aab2c2f8a5cf64adcea060b46145cdb9fc6aec6409105974b07d866c960d6c  WavesOfFood-debug.apk
+f04f05b8d78bc0826b79f3166c2a7964c602c2ae39c48f1d658bdf48162c4fce  WavesOfFood-assignment.mp4
